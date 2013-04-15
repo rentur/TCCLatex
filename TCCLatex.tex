@@ -6,6 +6,8 @@
 \date{\today}
 \title{Uma Nova Maneira de se Enforcar EM \LaTeX !!!}
 
+\newcommand{\vetor}[1]{\textbf{#1}}
+
 \begin{document}
 
 \maketitle
@@ -18,13 +20,25 @@ Neste trabalho mostraremos como se enforcar eficientemente.
 
 \section{Motivação}\label{sec:motiv}
 As pessoas se enforcam muito mal hoje em dia.\\
-Referencia à introdução: \ref{sec:intro}...
-
+Referencia à introdução: \ref{sec:intro}...\\
 Uma fórmula maluca: $ V =RI $ \\
 Outra fórmula maluca: $ I = \frac{V}{R} $
 
 $$ 0 = 1+e^{j\pi}  $$
 
-IDFT: $$ x_n = \frac{1}{N}\sum_{k=0}^{N-1} X_k \cdot e^{i2\pi kn/N} $$
+IDFT: 
+\begin{equation} \label{eq:IDFT}
+ x_n = \frac{1}{N}\sum_{k=0}^{N-1} X_k \cdot e^{i2\pi kn/N} 
+\end{equation}
+
+referência à equação acima: \ref{eq:IDFT}.
+
+Equação dos nerds:
+\begin{align}
+\nabla \cdot E & = \frac{\rho}{\epsilon_0} \\
+\nabla  & = 0 \\
+\nabla \times E & = -\frac{\partial \vetor{B}}{\partial t}
+\end{align}
+
 
 \end{document}
