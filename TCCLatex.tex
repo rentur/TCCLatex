@@ -1,8 +1,11 @@
-\documentclass{article}
+\documentclass{report}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{indentfirst}
 \usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[brazil]{babel}
 
 \author{Renan Turrissi}
 \date{\today}
@@ -14,15 +17,13 @@
 
 \maketitle
 
-\newpage
-
-\section{Introdução}\label{sec:intro}
+\chapter{Introdução}\label{chap:intro}
 Neste trabalho mostraremos como se enforcar eficientemente.
 % aqui eu tenho que melhorar esse troço
 
-\section{Motivação}\label{sec:motiv}
+\chapter{Motivação}\label{chap:motiv}
 As pessoas se enforcam muito mal hoje em dia.\\
-Referencia à introdução: \ref{sec:intro}...\\
+Referencia à introdução: \ref{chap:intro}...\\
 Uma fórmula maluca: $ V =RI $   
 
 \hfill
@@ -70,6 +71,17 @@ A tabela show:
 	\end{tabular}
 	\caption{Legenda da Tabela}
 \end{table}
+
+A figura show:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{./figuraA.jpg}
+	\caption{fome...}
+	\label{fig:lasanha}
+\end{figure}
+
+A figura da lasanha é a figura \ref{fig:lasanha}
 
 
 \end{document}
