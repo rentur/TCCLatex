@@ -1,0 +1,21 @@
+\documentclass{standalone}
+\usepackage{circuitikz}
+
+
+\begin{document}
+\centering
+\begin{circuitikz}
+
+\draw (0,0) node[and port] (my) {and}
+(my.out) to[R] (2,0) to[R] ++(0,2) to[C] ++(-3,0) -- (my.in 1);
+
+\draw 
+(3,3) to[sV] (3,6)
+(3,3) --  (6,3)
+(3,6) --  (4,6)
+(4,6) to[D] (4,8)
+;
+
+\end{circuitikz}
+
+\end{document}
